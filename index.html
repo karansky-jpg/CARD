@@ -1,4 +1,4 @@
-DIGITAL MENU
+GRILL MASTERS
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,15 +6,12 @@ DIGITAL MENU
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GRILL MASTERS - Royal Indian Luxury Menu</title>
     
-    <!-- TailWind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Premium Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
@@ -123,24 +120,19 @@ DIGITAL MENU
 </head>
 <body class="min-h-screen flex flex-col justify-between">
 
-    <!-- STATIC TOP HEADER (Always Present) -->
     <header class="w-full text-center py-3 bg-[#0A1D37] text-[#FAF6F0] border-b border-[#D4AF37] z-50 shadow-md">
         <p class="font-sans-alt text-xs tracking-[0.25em] uppercase font-light text-[#FAF6F0]/80">
             Created By <span class="text-[#D4AF37] font-medium">Karan Digital Menu Agency</span>
         </p>
     </header>
 
-    <!-- MAIN INTERACTIVE SECTION (Book and Page Controls) -->
     <main class="flex-grow flex flex-col items-center justify-start py-6 px-4 md:px-8 max-w-6xl w-full mx-auto relative">
         
-        <!-- Controls & Sound Toggle Toolbar -->
         <div class="w-full max-w-4xl flex justify-between items-center mb-4 z-40 px-2">
-            <!-- Navigation Left -->
             <button onclick="prevPage()" class="flex items-center gap-1 font-cinzel text-xs text-[#0A1D37] hover:text-[#D4AF37] transition duration-300">
                 <i data-lucide="chevron-left" class="w-4 h-4 text-[#D4AF37]"></i> Prev
             </button>
             
-            <!-- ASMR Sound Status Indicator -->
             <button onclick="toggleAudio()" id="sound-btn" class="flex items-center gap-2 bg-[#0B3C20]/10 hover:bg-[#0B3C20]/20 px-3 py-1.5 rounded-full border border-[#D4AF37]/30 transition duration-300">
                 <span id="sound-icon-wrapper">
                     <i data-lucide="volume-2" class="w-4 h-4 text-[#0B3C20]"></i>
@@ -150,24 +142,19 @@ DIGITAL MENU
                 </span>
             </button>
 
-            <!-- Navigation Right -->
             <button onclick="nextPage()" class="flex items-center gap-1 font-cinzel text-xs text-[#0A1D37] hover:text-[#D4AF37] transition duration-300">
                 Next <i data-lucide="chevron-right" class="w-4 h-4 text-[#D4AF37]"></i>
             </button>
         </div>
 
-        <!-- THE LUXURY BOOK FRAME -->
         <div class="w-full max-w-4xl h-[70vh] md:h-[75vh] book-container bg-[#FAF6F0] rounded-2xl shadow-2xl border-4 border-[#0A1D37] relative overflow-hidden">
             
-            <!-- PAGE 1: COVER PAGE -->
             <div id="page-1" class="page-card active bg-gradient-to-br from-[#0A1D37] via-[#0D2444] to-[#0A1D37] p-8 flex flex-col justify-between items-center text-center">
-                <!-- Royal Corner Borders -->
                 <div class="ornament-corner ornament-tl"></div>
                 <div class="ornament-corner ornament-tr"></div>
                 <div class="ornament-corner ornament-bl"></div>
                 <div class="ornament-corner ornament-br"></div>
 
-                <!-- Top Crown Decorative Frame -->
                 <div class="flex flex-col items-center pt-4">
                     <div class="text-[#D4AF37] mb-2 animate-bounce">
                         <i data-lucide="crown" class="w-8 h-8"></i>
@@ -175,9 +162,7 @@ DIGITAL MENU
                     <div class="w-24 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent"></div>
                 </div>
 
-                <!-- Main Branding -->
                 <div class="flex flex-col items-center my-auto space-y-6">
-                    <!-- FIRST LOGO (With Screen Screenshot styling) -->
                     <div class="relative group p-1.5 bg-gradient-to-r from-[#D4AF37] to-[#FFB302] rounded-xl shadow-lg transform hover:scale-105 transition duration-500 max-w-[280px]">
                         <img src="https://i.ibb.co/prwhdnC0/Screenshot-20260518-144001-Chrome.jpg" 
                              alt="Grill Masters Logo 1" 
@@ -185,14 +170,12 @@ DIGITAL MENU
                              onerror="this.src='https://placehold.co/400?text=GRILL+MASTERS+LOGO';">
                     </div>
 
-                    <!-- TAGLINE below first logo -->
                     <p class="font-cinzel text-[#FFB302] text-sm md:text-base tracking-[0.25em] font-semibold uppercase italic yellow-glow">
                         TASTE AND HEALTH WRAPPED TOGETHER
                     </p>
 
                     <div class="w-16 h-[2px] bg-[#D4AF37] my-3"></div>
 
-                    <!-- SECOND LOGO (Preserving natural colors) -->
                     <div class="p-1 bg-[#FAF6F0] rounded-xl shadow-md max-w-[200px]">
                         <img src="https://i.ibb.co/84bMbV7S/Screenshot-20260429-174505-Gallery.jpg" 
                              alt="Grill Masters Logo 2" 
@@ -201,7 +184,6 @@ DIGITAL MENU
                     </div>
                 </div>
 
-                <!-- Swipe instruction and visual indicators -->
                 <div class="flex flex-col items-center pb-4">
                     <div class="w-24 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mb-3"></div>
                     <p class="font-sans-alt text-[11px] tracking-[0.3em] uppercase text-[#FAF6F0]/80 flex items-center gap-2">
@@ -210,12 +192,10 @@ DIGITAL MENU
                 </div>
             </div>
 
-            <!-- PAGE 2: PIZZAS -->
             <div id="page-2" class="page-card incoming bg-[#FAF6F0] p-6 md:p-8 flex flex-col h-full overflow-y-auto custom-scroll">
                 <div class="ornament-corner ornament-tl"></div>
                 <div class="ornament-corner ornament-tr"></div>
                 
-                <!-- HEADER - FIRE YELLOW TEXT ON GREY WOODEN SLATE -->
                 <div class="w-full bg-[#202124] border-2 border-[#D4AF37] py-3 px-6 rounded-lg shadow-lg text-center mb-6 mt-4">
                     <h1 class="font-cinzel text-3xl md:text-4xl text-[#FFB302] font-black tracking-widest uppercase yellow-glow">
                         PIZZA VARIETIES
@@ -223,7 +203,6 @@ DIGITAL MENU
                 </div>
 
                 <div class="space-y-6">
-                    <!-- VEG PIZZA (R & M Prices) -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2 flex justify-between items-center">
                             <h2 class="font-cinzel text-lg md:text-xl text-[#FAF6F0] font-bold tracking-wider">VEG PIZZA</h2>
@@ -233,19 +212,18 @@ DIGITAL MENU
                             </div>
                         </div>
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-3 font-sans-alt">
-                            <!-- Pizza List Items -->
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1 hover:bg-[#0B3C20]/5 px-1 rounded transition">
                                 <span class="font-medium text-sm md:text-base">Cheese Margherita</span>
                                 <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹170</span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹310</span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-cheese_margherita_regular">170</span></span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-cheese_margherita_medium">310</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1 hover:bg-[#0B3C20]/5 px-1 rounded transition">
                                 <span class="font-medium text-sm md:text-base">Veggie Garden</span>
                                 <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹170</span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹310</span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-veggie_garden_regular">170</span></span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-veggie_garden_medium">310</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1 hover:bg-[#0B3C20]/5 px-1 rounded transition">
@@ -253,15 +231,15 @@ DIGITAL MENU
                                     Sweet Corn Treat <span class="text-[#FFB302]">★</span>
                                 </span>
                                 <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹170</span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹310</span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-sweet_corn_treat_regular">170</span></span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-sweet_corn_treat_medium">310</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1 hover:bg-[#0B3C20]/5 px-1 rounded transition">
                                 <span class="font-medium text-sm md:text-base">Farm Fresh</span>
                                 <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹200</span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹330</span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-farm_fresh_regular">200</span></span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-farm_fresh_medium">330</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1 hover:bg-[#0B3C20]/5 px-1 rounded transition">
@@ -269,15 +247,15 @@ DIGITAL MENU
                                     Paneer Bingo <span class="text-[#FFB302]">★</span>
                                 </span>
                                 <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹200</span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹330</span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-paneer_bingo_regular">200</span></span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-paneer_bingo_medium">330</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1 hover:bg-[#0B3C20]/5 px-1 rounded transition">
                                 <span class="font-medium text-sm md:text-base">Paneer Tikka</span>
                                 <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹240</span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹390</span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-paneer_tikka_pizza_regular">240</span></span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-paneer_tikka_pizza_medium">390</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1 hover:bg-[#0B3C20]/5 px-1 rounded transition">
@@ -285,21 +263,20 @@ DIGITAL MENU
                                     Punjabi Paneer Pizza <span class="text-[#FFB302]">★</span>
                                 </span>
                                 <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹240</span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹390</span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-punjabi_paneer_pizza_regular">240</span></span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-punjabi_paneer_pizza_medium">390</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center hover:bg-[#0B3C20]/5 px-1 rounded transition">
                                 <span class="font-bold text-sm md:text-base text-[#0B3C20]">GRILL 'S SPECIAL</span>
                                 <div class="flex gap-8 text-sm font-bold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹240</span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹390</span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-grills_special_pizza_regular">240</span></span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-grills_special_pizza_medium">390</span></span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- THIN CRUST PIZZA -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-lg text-[#FAF6F0] font-bold tracking-wider">THIN CRUST PIZZA</h2>
@@ -307,20 +284,19 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-3 font-sans-alt">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1">
                                 <span class="font-medium text-sm">Mushroom Pizza</span>
-                                <span class="text-sm font-bold text-[#0B3C20]">₹390</span>
+                                <span class="text-sm font-bold text-[#0B3C20]">₹<span id="price-mushroom_pizza">390</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1">
                                 <span class="font-medium text-sm">Peri Peri Paneer Pizza</span>
-                                <span class="text-sm font-bold text-[#0B3C20]">₹390</span>
+                                <span class="text-sm font-bold text-[#0B3C20]">₹<span id="price-peri_peri_paneer_pizza">390</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium text-sm">Veggie Monster Pizza</span>
-                                <span class="text-sm font-bold text-[#0B3C20]">₹390</span>
+                                <span class="text-sm font-bold text-[#0B3C20]">₹<span id="price-veggie_monster_pizza">390</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- CLASSIC SINGLES -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-lg text-[#FAF6F0] font-bold tracking-wider">CLASSIC SINGLES</h2>
@@ -328,22 +304,21 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-3 font-sans-alt">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1">
                                 <span class="font-medium text-sm">Onion Pizza</span>
-                                <span class="text-sm font-bold text-[#0B3C20]">₹80</span>
+                                <span class="text-sm font-bold text-[#0B3C20]">₹<span id="price-onion_pizza">80</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1">
                                 <span class="font-medium text-sm">Corn Pizza</span>
-                                <span class="text-sm font-bold text-[#0B3C20]">₹80</span>
+                                <span class="text-sm font-bold text-[#0B3C20]">₹<span id="price-corn_pizza">80</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium text-sm flex items-center gap-1">
                                     Paneer Pizza <span class="text-[#FFB302]">★</span>
                                 </span>
-                                <span class="text-sm font-bold text-[#0B3C20]">₹100</span>
+                                <span class="text-sm font-bold text-[#0B3C20]">₹<span id="price-paneer_pizza">100</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- ADD-ONS (R & M Prices) -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2 flex justify-between items-center">
                             <h2 class="font-cinzel text-lg text-[#FAF6F0] font-bold tracking-wider">ADD-ONS</h2>
@@ -356,28 +331,27 @@ DIGITAL MENU
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1">
                                 <span class="font-medium text-sm">Any Topping</span>
                                 <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹20</span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹30</span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-any_topping_regular">20</span></span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-any_topping_medium">30</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1">
                                 <span class="font-medium text-sm">Extra Cheese</span>
                                 <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹30</span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹50</span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-extra_cheese_regular">30</span></span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-extra_cheese_medium">50</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium text-sm">Cheese Burst Base</span>
                                 <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹60</span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹90</span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-cheese_burst_base_regular">60</span></span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-cheese_burst_base_medium">90</span></span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- NON-VEG PIZZA (R & M Prices) -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2 flex justify-between items-center">
                             <h2 class="font-cinzel text-lg text-[#FAF6F0] font-bold tracking-wider">NON-VEG PIZZA</h2>
@@ -390,8 +364,8 @@ DIGITAL MENU
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1">
                                 <span class="font-medium text-sm">Grilled Chicken Pizza</span>
                                 <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹250</span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹420</span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-grilled_chicken_pizza_regular">250</span></span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-grilled_chicken_pizza_medium">420</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center">
@@ -399,28 +373,25 @@ DIGITAL MENU
                                     Peri Peri Chicken Pizza <span class="text-[#FFB302]">★</span>
                                 </span>
                                 <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹280</span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹450</span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-peri_peri_chicken_pizza_regular">280</span></span>
+                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-peri_peri_chicken_pizza_medium">450</span></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="h-10"></div> <!-- spacing for bottom padding -->
+                <div class="h-10"></div>
             </div>
 
-            <!-- PAGE 3: BURGERS, TACOS, GARLIC BREAD & NOODLES -->
             <div id="page-3" class="page-card incoming bg-[#FAF6F0] p-6 md:p-8 flex flex-col h-full overflow-y-auto custom-scroll">
                 <div class="ornament-corner ornament-tl"></div>
                 <div class="ornament-corner ornament-tr"></div>
 
-                <!-- Page Header Badge -->
                 <div class="text-center my-4">
                     <span class="font-cinzel text-[#0B3C20] border-b-2 border-[#D4AF37] text-2xl font-bold tracking-[0.2em] uppercase">Burgers &amp; Sides</span>
                 </div>
 
                 <div class="space-y-6">
-                    <!-- VEG BURGER (REG & WHEAT Prices) -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2.5 flex justify-between items-center">
                             <h2 class="font-cinzel text-base md:text-lg text-[#FAF6F0] font-bold tracking-wider">VEG BURGER</h2>
@@ -430,81 +401,79 @@ DIGITAL MENU
                             </div>
                         </div>
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt">
-                            <!-- Items -->
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm">Junior</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹60</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹70</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-junior_burger_reg">60</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-junior_burger_wheat">70</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm flex items-center gap-1">Texas <span class="text-[#FFB302]">★</span></span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹80</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹90</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-texas_burger_reg">80</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-texas_burger_wheat">90</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm flex items-center gap-1">Creamy Burger <span class="text-[#FFB302]">★</span></span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹80</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹90</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-creamy_burger_reg">80</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-creamy_burger_wheat">90</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm">Chana Patty Burger</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹80</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹90</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-chana_patty_burger_reg">80</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-chana_patty_burger_wheat">90</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm">American Burger</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹90</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹100</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-american_burger_reg">90</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-american_burger_wheat">100</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm flex items-center gap-1">Paneer Crisp <span class="text-[#FFB302]">★</span></span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹100</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹110</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-paneer_crisp_burger_reg">100</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-paneer_crisp_burger_wheat">110</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm flex items-center gap-1">Giga Bite <span class="text-[#FFB302]">★</span></span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹110</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹120</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-giga_bite_burger_reg">110</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-giga_bite_burger_wheat">120</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm flex items-center gap-1">Texas Paneer <span class="text-[#FFB302]">★</span></span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹110</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹120</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-texas_paneer_burger_reg">110</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-texas_paneer_burger_wheat">120</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm">Paneer Makhani Burger</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹120</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹130</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-paneer_makhani_burger_reg">120</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-paneer_makhani_burger_wheat">130</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium text-sm">Paneer Veg Mountain</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹150</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹160</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-paneer_veg_mountain_burger_reg">150</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-paneer_veg_mountain_burger_wheat">160</span></span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- NON-VEG BURGERS -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2.5 flex justify-between items-center">
                             <h2 class="font-cinzel text-base md:text-lg text-[#FAF6F0] font-bold tracking-wider">NON-VEG BURGERS</h2>
@@ -517,49 +486,48 @@ DIGITAL MENU
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm">Compact Burger</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹80</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹90</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-compact_burger_reg">80</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-compact_burger_wheat">90</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm">Bad Boy</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹100</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹110</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-bad_boy_burger_reg">100</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-bad_boy_burger_wheat">110</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm">Big Devil</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹120</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹130</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-big_devil_burger_reg">120</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-big_devil_burger_wheat">130</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm">Illeagle Burger</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹130</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹140</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-illeagle_burger_reg">130</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-illeagle_burger_wheat">140</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm flex items-center gap-1">Grilled Chicken Burger <span class="text-[#FFB302]">★</span></span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹150</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹160</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-grilled_chicken_burger_reg">150</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-grilled_chicken_burger_wheat">160</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium text-sm">Chicken Mountain Burger</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹170</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹180</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-chicken_mountain_burger_reg">170</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-chicken_mountain_burger_wheat">180</span></span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- TACO -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">TACO</h2>
@@ -567,16 +535,15 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Veggie Taco</span>
-                                <span class="font-bold text-[#0B3C20]">₹110</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veggie_taco">110</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium">Paneer Taco</span>
-                                <span class="font-bold text-[#0B3C20]">₹130</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-paneer_taco">130</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- GARLIC BREAD -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">GARLIC BREAD</h2>
@@ -584,20 +551,19 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Garlic Breadsticks</span>
-                                <span class="font-bold text-[#0B3C20]">₹80</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-garlic_breadsticks">80</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Cheese Garlic Bread <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹120</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cheese_garlic_bread">120</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium">Exotic Garlic Bread</span>
-                                <span class="font-bold text-[#0B3C20]">₹130</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-exotic_garlic_bread">130</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- NOODLES -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">NOODLES</h2>
@@ -605,27 +571,27 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Desi Chowmein <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹120</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-desi_chowmein">120</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Veg Noodles</span>
-                                <span class="font-bold text-[#0B3C20]">₹120</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_noodles">120</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Hakka Noodles</span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hakka_noodles">150</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Paneer Noodles <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-paneer_noodles">150</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Mirchi Noodles</span>
-                                <span class="font-bold text-[#0B3C20]">₹160</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-mirchi_noodles">160</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-bold text-[#0B3C20] flex items-center gap-1">Dragon Special Noodles <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹170</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-dragon_special_noodles">170</span></span>
                             </div>
                         </div>
                     </div>
@@ -633,7 +599,6 @@ DIGITAL MENU
                 <div class="h-10"></div>
             </div>
 
-            <!-- PAGE 4: WRAPS, BRUSCHETTA, NACHOS, SPRING ROLLS, SOUPS, SUBS -->
             <div id="page-4" class="page-card incoming bg-[#FAF6F0] p-6 md:p-8 flex flex-col h-full overflow-y-auto custom-scroll">
                 <div class="ornament-corner ornament-tl"></div>
                 <div class="ornament-corner ornament-tr"></div>
@@ -643,7 +608,6 @@ DIGITAL MENU
                 </div>
 
                 <div class="space-y-6">
-                    <!-- VEG WRAPS (REG & WHEAT) -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2 flex justify-between items-center">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">VEG WRAPS</h2>
@@ -656,63 +620,62 @@ DIGITAL MENU
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm">Veg Wrap</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹120</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹130</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-veg_wrap_reg">120</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-veg_wrap_wheat">130</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm">Chana Patty Wrap</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹120</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹130</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-chana_patty_wrap_reg">120</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-chana_patty_wrap_wheat">130</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm flex items-center gap-1">Mexican Tortilla <span class="text-[#FFB302]">★</span></span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹130</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹140</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-mexican_tortilla_wrap_reg">130</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-mexican_tortilla_wrap_wheat">140</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm flex items-center gap-1">Hara Bhara Kebab Wrap <span class="text-[#FFB302]">★</span></span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹140</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹150</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-hara_bhara_kebab_wrap_reg">140</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-hara_bhara_kebab_wrap_wheat">150</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm flex items-center gap-1">Crunchy Paneer Wrap <span class="text-[#FFB302]">★</span></span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹140</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹150</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-crunchy_paneer_wrap_reg">140</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-crunchy_paneer_wrap_wheat">150</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm">Grilled Paneer Wrap</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹150</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹160</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-grilled_paneer_wrap_reg">150</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-grilled_paneer_wrap_wheat">160</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm flex items-center gap-1">Peri Peri Paneer Wrap <span class="text-[#FFB302]">★</span></span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹150</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹160</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-peri_peri_paneer_wrap_reg">150</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-peri_peri_paneer_wrap_wheat">160</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium text-sm">Paneer Makhani Wrap</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹150</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹160</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-paneer_makhani_wrap_reg">150</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-paneer_makhani_wrap_wheat">160</span></span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- NON-VEG WRAPS -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2 flex justify-between items-center">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">NON-VEG WRAPS</h2>
@@ -725,28 +688,27 @@ DIGITAL MENU
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm">Grilled Chicken Wrap</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹140</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹150</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-grilled_chicken_wrap_reg">140</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-grilled_chicken_wrap_wheat">150</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm">Chicken Makhani wrap</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹150</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹160</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-chicken_makhani_wrap_reg">150</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-chicken_makhani_wrap_wheat">160</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium text-sm flex items-center gap-1">Chicken Tikka Wrap <span class="text-[#FFB302]">★</span></span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹160</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹170</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-chicken_tikka_wrap_reg">160</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-chicken_tikka_wrap_wheat">170</span></span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- BRUSCHETTA -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">BRUSCHETTA</h2>
@@ -754,16 +716,15 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Cheese Bruschetta</span>
-                                <span class="font-bold text-[#0B3C20]">₹120</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cheese_bruschetta">120</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium">Corn &amp; Mushroom Bruschetta</span>
-                                <span class="font-bold text-[#0B3C20]">₹130</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-corn_mushroom_bruschetta">130</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- NACHOS -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">NACHOS</h2>
@@ -771,24 +732,23 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Makhani Nachos</span>
-                                <span class="font-bold text-[#0B3C20]">₹120</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-makhani_nachos">120</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Baked Makhani Nachos</span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-baked_makhani_nachos">150</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Mexican Nachos <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹120</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-mexican_nachos">120</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium">Baked Mexican Nachos</span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-baked_mexican_nachos">150</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- SPRING ROLLS -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">SPRING ROLLS</h2>
@@ -796,16 +756,15 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Veg Spring Rolls <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹130</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_spring_rolls">130</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium flex items-center gap-1">Veg Kurkure Spring Rolls <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_kurkure_spring_rolls">150</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- SOUPS -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">SOUPS</h2>
@@ -813,24 +772,23 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Veg Manchow Soup <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹80</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_manchow_soup">80</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Sweet &amp; Sour Soup</span>
-                                <span class="font-bold text-[#0B3C20]">₹80</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-sweet_sour_soup">80</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Mushroom &amp; Corn Soup</span>
-                                <span class="font-bold text-[#0B3C20]">₹80</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-mushroom_corn_soup">80</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium">Hot &amp; Sour Soup</span>
-                                <span class="font-bold text-[#0B3C20]">₹80</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hot_sour_soup">80</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- SUBS -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">SUBS</h2>
@@ -838,20 +796,19 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Veg Sub</span>
-                                <span class="font-bold text-[#0B3C20]">₹140</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_sub">140</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Crunchy Paneer Sub <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹160</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-crunchy_paneer_sub">160</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium">Grilled Paneer Sub</span>
-                                <span class="font-bold text-[#0B3C20]">₹160</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-grilled_paneer_sub">160</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- NON VEG. SUBS -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">NON VEG. SUBS</h2>
@@ -859,11 +816,11 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Grilled Chicken Sub</span>
-                                <span class="font-bold text-[#0B3C20]">₹160</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-grilled_chicken_sub">160</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium">Makhani Chicken Sub</span>
-                                <span class="font-bold text-[#0B3C20]">₹170</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-makhani_chicken_sub">170</span></span>
                             </div>
                         </div>
                     </div>
@@ -871,7 +828,6 @@ DIGITAL MENU
                 <div class="h-10"></div>
             </div>
 
-            <!-- PAGE 5: SANDWICHES, PASTA-LA-VISTA, SIDES & SALADS -->
             <div id="page-5" class="page-card incoming bg-[#FAF6F0] p-6 md:p-8 flex flex-col h-full overflow-y-auto custom-scroll">
                 <div class="ornament-corner ornament-tl"></div>
                 <div class="ornament-corner ornament-tr"></div>
@@ -881,7 +837,6 @@ DIGITAL MENU
                 </div>
 
                 <div class="space-y-6">
-                    <!-- VEG GRILLED SANDWICHES -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">VEG GRILLED SANDWICHES</h2>
@@ -889,28 +844,27 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Veg &amp; Cheese Sandwich</span>
-                                <span class="font-bold text-[#0B3C20]">₹100</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_cheese_sandwich">100</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Cheesy corn <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹120</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cheesy_corn_sandwich">120</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Mexican Wave</span>
-                                <span class="font-bold text-[#0B3C20]">₹130</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-mexican_wave_sandwich">130</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Mushroom Corn <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-mushroom_corn_sandwich">150</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium">Paneer Tikka Sandwich</span>
-                                <span class="font-bold text-[#0B3C20]">₹160</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-paneer_tikka_sandwich">160</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- NON-VEG GRILLED SANDWICHES -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">NON-VEG GRILLED SANDWICHES</h2>
@@ -918,16 +872,15 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Grilled Chicken Sandwich</span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-grilled_chicken_sandwich">150</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium flex items-center gap-1">Makhani Chicken Sandwich <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹170</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-makhani_chicken_sandwich">170</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- PASTA-LA-VISTA (REG / BAKED) -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
                             <div class="flex flex-col">
@@ -945,42 +898,41 @@ DIGITAL MENU
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm flex items-center gap-1">White Sauce Pasta <span class="text-[#FFB302]">★</span></span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹160</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹190</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-white_sauce_pasta_reg">160</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-white_sauce_pasta_baked">190</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm flex items-center gap-1">Red Sauce Pasta <span class="text-[#FFB302]">★</span></span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹160</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹190</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-red_sauce_pasta_reg">160</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-red_sauce_pasta_baked">190</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm">Mix Sauce Pasta</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹170</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹200</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-mix_sauce_pasta_reg">170</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-mix_sauce_pasta_baked">200</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium text-sm">Tandoori Pasta</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹170</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹200</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-tandoori_pasta_reg">170</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-tandoori_pasta_baked">200</span></span>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium text-sm">Makhani Pasta</span>
                                 <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹170</span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹200</span>
+                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-makhani_pasta_reg">170</span></span>
+                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-makhani_pasta_baked">200</span></span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- SIDES -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">SIDES</h2>
@@ -988,40 +940,39 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Classic Fries</span>
-                                <span class="font-bold text-[#0B3C20]">₹80</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-classic_fries">80</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Peri Peri Fries <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹100</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-peri_peri_fries">100</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Bombay Fries <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹110</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-bombay_fries">110</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Hara Bhara Kebab</span>
-                                <span class="font-bold text-[#0B3C20]">₹120</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hara_bhara_kebab">120</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Cheese Loaded Fries</span>
-                                <span class="font-bold text-[#0B3C20]">₹130</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cheese_loaded_fries">130</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Peri Peri Cheese Loaded Fries</span>
-                                <span class="font-bold text-[#0B3C20]">₹140</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-peri_peri_cheese_loaded_fries">140</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Bombay Cheese Loaded Fries</span>
-                                <span class="font-bold text-[#0B3C20]">₹140</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-bombay_cheese_loaded_fries">140</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium">Chicken Nuggets</span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-chicken_nuggets">150</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- FRIED RICE -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">FRIED RICE</h2>
@@ -1029,24 +980,23 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Veg Fried Rice <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹130</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_fried_rice">130</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Paneer Fried Rice</span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-paneer_fried_rice">150</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Paneer Chilly Garlic Fried Rice <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹160</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-paneer_chilly_garlic_fried_rice">160</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium">Dragon Special Fried Rice</span>
-                                <span class="font-bold text-[#0B3C20]">₹170</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-dragon_special_fried_rice">170</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- SALADS -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">SALADS</h2>
@@ -1054,27 +1004,27 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Veg Crunch Salad <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹130</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_crunch_salad">130</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Veg Gym Diet</span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_gym_diet_salad">150</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Grilled Paneer Salad</span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-grilled_paneer_salad">150</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Paneer Crunch Salad <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹160</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-paneer_crunch_salad">160</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Chicken Gym Diet <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹160</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-chicken_gym_diet_salad">160</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium flex items-center gap-1">Grilled Chicken Salad <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹170</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-grilled_chicken_salad">170</span></span>
                             </div>
                         </div>
                     </div>
@@ -1082,7 +1032,6 @@ DIGITAL MENU
                 <div class="h-10"></div>
             </div>
 
-            <!-- PAGE 6: STARTERS, DESSERTS, COFFEES, ICE TEAS, MOJITOS, SHAKES -->
             <div id="page-6" class="page-card incoming bg-[#FAF6F0] p-6 md:p-8 flex flex-col h-full overflow-y-auto custom-scroll">
                 <div class="ornament-corner ornament-tl"></div>
                 <div class="ornament-corner ornament-tr"></div>
@@ -1092,7 +1041,6 @@ DIGITAL MENU
                 </div>
 
                 <div class="space-y-6">
-                    <!-- STARTERS -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">STARTERS</h2>
@@ -1100,36 +1048,35 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Chilly Potato</span>
-                                <span class="font-bold text-[#0B3C20]">₹130</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-chilly_potato">130</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Honey Chilly Potato</span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-honey_chilly_potato">150</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Crispy Corn</span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-crispy_corn">150</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Manchurian (Dry/Gravy)</span>
-                                <span class="font-bold text-[#0B3C20]">₹150 / ₹170</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-manchurian_dry">150</span> / ₹<span id="price-manchurian_gravy">170</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Mushroom Chilly Latpata</span>
-                                <span class="font-bold text-[#0B3C20]">₹170</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-mushroom_chilly_latpata">170</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Cheese Chilly (Dry/Gravy)</span>
-                                <span class="font-bold text-[#0B3C20]">₹170 / ₹190</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cheese_chilly_dry">170</span> / ₹<span id="price-cheese_chilly_gravy">190</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium">Paneer Hong Kong</span>
-                                <span class="font-bold text-[#0B3C20]">₹200</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-paneer_hong_kong">200</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- DESSERTS -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">DESSERTS</h2>
@@ -1137,28 +1084,27 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Oreo Crunch Ice Cream <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹80</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-oreo_crunch_ice_cream">80</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Choco Lava Cake</span>
-                                <span class="font-bold text-[#0B3C20]">₹90</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-choco_lava_cake">90</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Hot Brownie</span>
-                                <span class="font-bold text-[#0B3C20]">₹100</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hot_brownie">100</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Hot Chocolate</span>
-                                <span class="font-bold text-[#0B3C20]">₹100</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hot_chocolate">100</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium flex items-center gap-1">Hot Brownie with Ice Cream <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hot_brownie_with_ice_cream">150</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- HOT COFFEE -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">HOT COFFEE</h2>
@@ -1166,36 +1112,35 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Espresso Shot</span>
-                                <span class="font-bold text-[#0B3C20]">₹60</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-espresso_shot">60</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Kali Coffee</span>
-                                <span class="font-bold text-[#0B3C20]">₹70</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-kali_coffee">70</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Cappuccino <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹100</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cappuccino">100</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Café Latte <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹140</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cafe_latte">140</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Café Mocha</span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cafe_mocha">150</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Hazelnut Latte</span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hazelnut_latte">150</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium">Irish Latte</span>
-                                <span class="font-bold text-[#0B3C20]">₹150</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-irish_latte">150</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- ICE TEA -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">ICE TEA</h2>
@@ -1203,20 +1148,19 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Lemon Ice Tea <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹80</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-lemon_ice_tea">80</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Blueberry Ice Tea <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹100</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-blueberry_ice_tea">100</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium">Watermelon Ice Tea</span>
-                                <span class="font-bold text-[#0B3C20]">₹100</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-watermelon_ice_tea">100</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- MOJITOS -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">MOJITOS</h2>
@@ -1224,32 +1168,31 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Sweet Lime Mojito <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹90</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-sweet_lime_mojitio">90</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Virgin Mojito</span>
-                                <span class="font-bold text-[#0B3C20]">₹90</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-virgin_mojito">90</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Blueberry Mojito</span>
-                                <span class="font-bold text-[#0B3C20]">₹90</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-blueberry_mojito">90</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Watermelon Mojito <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹90</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-watermelon_mojito">90</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Green Apple Mojito</span>
-                                <span class="font-bold text-[#0B3C20]">₹90</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-green_apple_mojito">90</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium flex items-center gap-1">Kala Khatta Mojito <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹90</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-kala_khatta_mojito">90</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- COLD COFFEE -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">COLD COFFEE</h2>
@@ -1257,32 +1200,31 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Cold Coffee <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹110</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cold_coffee">110</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Iced Cappuccino <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹110</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-iced_cappuccino">110</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Caramel Coffee</span>
-                                <span class="font-bold text-[#0B3C20]">₹120</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-caramel_coffee">120</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Iced Latte</span>
-                                <span class="font-bold text-[#0B3C20]">₹140</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-iced_latte">140</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Irish Cold Coffee</span>
-                                <span class="font-bold text-[#0B3C20]">₹140</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-irish_cold_coffee">140</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium">Hazelnut Cold Coffee</span>
-                                <span class="font-bold text-[#0B3C20]">₹140</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hazelnut_cold_coffee">140</span></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- SHAKES -->
                     <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
                         <div class="px-4 py-2">
                             <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">SHAKES</h2>
@@ -1290,31 +1232,31 @@ DIGITAL MENU
                         <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Vanilla Shake</span>
-                                <span class="font-bold text-[#0B3C20]">₹100</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-vanilla_shake">100</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Strawberry Shake</span>
-                                <span class="font-bold text-[#0B3C20]">₹100</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-strawberry_shake">100</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Butterscotch Shake <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹110</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-butterscotch_shake">110</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Chocolate Shake</span>
-                                <span class="font-bold text-[#0B3C20]">₹110</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-chocolate_shake">110</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium">Black Currant Shake</span>
-                                <span class="font-bold text-[#0B3C20]">₹110</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-black_currant_shake">110</span></span>
                             </div>
                             <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
                                 <span class="font-medium flex items-center gap-1">Oreo Shake <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹140</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-oreo_shake">140</span></span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="font-medium">Brownie Shake</span>
-                                <span class="font-bold text-[#0B3C20]">₹140</span>
+                                <span class="font-bold text-[#0B3C20]">₹<span id="price-brownie_shake">140</span></span>
                             </div>
                         </div>
                     </div>
@@ -1324,7 +1266,6 @@ DIGITAL MENU
 
         </div>
 
-        <!-- PAGE PAGINATION DOTS Indicator -->
         <div class="mt-6 flex gap-3 items-center z-40">
             <button onclick="goToPage(1)" class="page-dot w-3 h-3 rounded-full bg-[#0A1D37] transition duration-300 border border-[#D4AF37]" title="Page 1"></button>
             <button onclick="goToPage(2)" class="page-dot w-3 h-3 rounded-full bg-slate-300 transition duration-300 border border-[#D4AF37]" title="Page 2"></button>
@@ -1334,7 +1275,6 @@ DIGITAL MENU
             <button onclick="goToPage(6)" class="page-dot w-3 h-3 rounded-full bg-slate-300 transition duration-300 border border-[#D4AF37]" title="Page 6"></button>
         </div>
 
-        <!-- SCROLL DOWN PROMPT -->
         <div class="mt-4 animate-pulse flex flex-col items-center">
             <p class="font-sans-alt text-[10px] tracking-widest text-[#0B3C20] font-semibold uppercase">Scroll Down For Royal Feedback</p>
             <i data-lucide="chevron-down" class="w-4 h-4 text-[#D4AF37]"></i>
@@ -1342,11 +1282,9 @@ DIGITAL MENU
 
     </main>
 
-    <!-- FLOATING SCROLLABLE FEEDBACK SECTION -->
     <section class="w-full bg-gradient-to-b from-[#0A1D37] to-[#050D1B] text-[#FAF6F0] py-12 px-6 md:px-12 border-t-4 border-[#D4AF37]">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-8">
-                <!-- Golden Crown Emblem -->
                 <div class="text-[#D4AF37] flex justify-center mb-2">
                     <i data-lucide="award" class="w-8 h-8"></i>
                 </div>
@@ -1355,10 +1293,8 @@ DIGITAL MENU
                 <p class="font-sans-alt text-xs text-[#FAF6F0]/70 mt-2 tracking-wider">Your culinary voice shapes our imperial recipes</p>
             </div>
 
-            <!-- FEEDBACK FORM -->
             <form onsubmit="handleFeedback(event)" class="space-y-6 font-sans-alt">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Guest Name -->
                     <div class="relative">
                         <label class="block text-[11px] uppercase tracking-widest text-[#D4AF37] mb-1">Your Royal Highness (Name)</label>
                         <div class="flex items-center border-b-2 border-[#D4AF37]/50 focus-within:border-[#FAF6F0] transition py-2">
@@ -1367,7 +1303,6 @@ DIGITAL MENU
                                    class="bg-transparent border-none outline-none w-full text-sm text-[#FAF6F0] placeholder-[#FAF6F0]/40">
                         </div>
                     </div>
-                    <!-- Phone / Email -->
                     <div class="relative">
                         <label class="block text-[11px] uppercase tracking-widest text-[#D4AF37] mb-1">Scroll Coordinates (Email/Phone)</label>
                         <div class="flex items-center border-b-2 border-[#D4AF37]/50 focus-within:border-[#FAF6F0] transition py-2">
@@ -1378,7 +1313,6 @@ DIGITAL MENU
                     </div>
                 </div>
 
-                <!-- Rating Section -->
                 <div>
                     <label class="block text-[11px] uppercase tracking-widest text-[#D4AF37] mb-2 text-center md:text-left">Your Experience Rating</label>
                     <div class="flex justify-center md:justify-start gap-4">
@@ -1400,14 +1334,12 @@ DIGITAL MENU
                     </div>
                 </div>
 
-                <!-- Message Section -->
                 <div>
                     <label class="block text-[11px] uppercase tracking-widest text-[#D4AF37] mb-1">Your Royal Message</label>
                     <textarea id="fb-message" rows="4" required placeholder="Tell us about your culinary journey..." 
                               class="w-full bg-[#FAF6F0]/5 border border-[#D4AF37]/40 rounded-xl p-3 text-sm text-[#FAF6F0] placeholder-[#FAF6F0]/30 focus:border-[#FAF6F0] outline-none transition"></textarea>
                 </div>
 
-                <!-- Submit Button -->
                 <div class="text-center">
                     <button type="submit" class="inline-flex items-center gap-3 bg-gradient-to-r from-[#D4AF37] to-[#FFB302] hover:from-[#FFB302] hover:to-[#D4AF37] text-[#0A1D37] font-semibold tracking-widest uppercase text-xs px-8 py-3.5 rounded-full shadow-lg transform hover:-translate-y-0.5 transition duration-300">
                         Dispatch to Grill Masters <i data-lucide="send" class="w-4 h-4"></i>
@@ -1417,7 +1349,6 @@ DIGITAL MENU
         </div>
     </section>
 
-    <!-- POPUP STATUS MODAL -->
     <div id="status-modal" class="fixed inset-0 bg-[#0A1D37]/80 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none transition duration-300">
         <div class="bg-[#FAF6F0] border-2 border-[#D4AF37] p-8 rounded-2xl max-w-sm w-full text-center shadow-2xl relative">
             <div class="text-[#0B3C20] flex justify-center mb-4">
@@ -1431,7 +1362,6 @@ DIGITAL MENU
         </div>
     </div>
 
-    <!-- JS CODE & LOGIC -->
     <script>
         // Total Available Pages
         const totalPages = 6;
@@ -1441,6 +1371,40 @@ DIGITAL MENU
 
         // Initialize Lucide Icons
         lucide.createIcons();
+
+        // ----------------- REAL-TIME GOOGLE SHEET FETCH SYSTEM -----------------
+        async function fetchMenuPrices() {
+            // Aapki public Google Sheet ka public CSV API path
+            const sheetUrl = "https://docs.google.com/spreadsheets/d/1ooAhddRANFXqv7S-JLif2CYLwusAYAwfp9CpxsfHlj4/gviz/tq?tqx=out:csv";
+
+            try {
+                const response = await fetch(sheetUrl);
+                const data = await response.text();
+                
+                // Pure CSV data ko alag-alag lines (rows) mein todna
+                const rows = data.split("\n");
+
+                rows.forEach(row => {
+                    // Quotation marks ("") mita kar Column A aur Column B ko todna
+                    const cleanRow = row.replace(/"/g, "");
+                    const columns = cleanRow.split(",");
+
+                    if (columns.length >= 2) {
+                        const itemId = columns[0].trim();  // Column A: Item ID
+                        const price = columns[1].trim();   // Column B: Price
+
+                        // HTML mein bani huye ID span ko khoj kar price update karna
+                        const element = document.getElementById(`price-${itemId}`);
+                        if (element && price && !isNaN(price)) {
+                            element.innerText = price;
+                        }
+                    }
+                });
+                console.log("Grill Masters Menu synced with Live Google Sheet successfully!");
+            } catch (error) {
+                console.error("Error syncing prices from Google Sheet:", error);
+            }
+        }
 
         // ----------------- ASMR SOUND SYNTHESIZER (No assets required!) -----------------
         function playASMRFlipSound() {
@@ -1586,21 +1550,17 @@ DIGITAL MENU
             const diffX = touchendX - touchstartX;
             const diffY = touchendY - touchstartY;
 
-            // Enforce swipe horizontal direction rather than casual vertical scroll movement
             if (Math.abs(diffX) > Math.abs(diffY)) {
                 if (Math.abs(diffX) > 45) { // minimum distance
                     if (diffX < 0) {
-                        // Swiped right-to-left -> Next Page
                         nextPage();
                     } else {
-                        // Swiped left-to-right -> Previous Page
                         prevPage();
                     }
                 }
             }
         }
 
-        // Keyboard arrow key navigation for extra usability
         document.addEventListener('keydown', (e) => {
             if (e.key === "ArrowRight") {
                 nextPage();
@@ -1624,7 +1584,6 @@ DIGITAL MENU
             });
         }
 
-        // Initialize with default 5-star rating
         setRating(5);
 
         function handleFeedback(event) {
@@ -1643,14 +1602,11 @@ DIGITAL MENU
                               `Witness Testimony (Message):\n"${message}"\n\n` +
                               `With Royal Regards,\n${name}`;
 
-            // Generate deep linking mailto command
             const mailtoUrl = `mailto:karrranverma@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
             
-            // Pop the Confirmation Modal
             const modal = document.getElementById('status-modal');
             modal.classList.remove('opacity-0', 'pointer-events-none');
             
-            // Open user's client
             setTimeout(() => {
                 window.location.href = mailtoUrl;
             }, 800);
@@ -1660,17 +1616,17 @@ DIGITAL MENU
             const modal = document.getElementById('status-modal');
             modal.classList.add('opacity-0', 'pointer-events-none');
             
-            // Clear feedback inputs safely
             document.getElementById('fb-name').value = '';
             document.getElementById('fb-contact').value = '';
             document.getElementById('fb-message').value = '';
             setRating(5);
         }
 
-        // Initial setup run
-        updatePageDisplay();
+        // Initial setup and Live Google Sheet fetch trigger on window load
+        window.onload = () => {
+            updatePageDisplay();
+            fetchMenuPrices(); // Sheet connect sync code run
+        };
     </script>
 </body>
-</html>
-
-```
+                            </html>
