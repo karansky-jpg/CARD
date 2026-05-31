@@ -149,6 +149,7 @@ GRILL MASTERS
 
         <div class="w-full max-w-4xl h-[70vh] md:h-[75vh] book-container bg-[#FAF6F0] rounded-2xl shadow-2xl border-4 border-[#0A1D37] relative overflow-hidden">
             
+            <!-- Page 1: Beautiful Welcome Cover -->
             <div id="page-1" class="page-card active bg-gradient-to-br from-[#0A1D37] via-[#0D2444] to-[#0A1D37] p-8 flex flex-col justify-between items-center text-center">
                 <div class="ornament-corner ornament-tl"></div>
                 <div class="ornament-corner ornament-tr"></div>
@@ -192,6 +193,7 @@ GRILL MASTERS
                 </div>
             </div>
 
+            <!-- Page 2: Pizza Specialties (Rendered Dynamically) -->
             <div id="page-2" class="page-card incoming bg-[#FAF6F0] p-6 md:p-8 flex flex-col h-full overflow-y-auto custom-scroll">
                 <div class="ornament-corner ornament-tl"></div>
                 <div class="ornament-corner ornament-tr"></div>
@@ -202,187 +204,13 @@ GRILL MASTERS
                     </h1>
                 </div>
 
-                <div class="space-y-6">
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2 flex justify-between items-center">
-                            <h2 class="font-cinzel text-lg md:text-xl text-[#FAF6F0] font-bold tracking-wider">VEG PIZZA</h2>
-                            <div class="flex gap-8 font-sans-alt text-xs font-bold text-[#D4AF37] pr-2">
-                                <span class="w-8 text-center">R</span>
-                                <span class="w-8 text-center">M</span>
-                            </div>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-3 font-sans-alt">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1 hover:bg-[#0B3C20]/5 px-1 rounded transition">
-                                <span class="font-medium text-sm md:text-base">Cheese Margherita</span>
-                                <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-cheese_margherita_regular">170</span></span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-cheese_margherita_medium">310</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1 hover:bg-[#0B3C20]/5 px-1 rounded transition">
-                                <span class="font-medium text-sm md:text-base">Veggie Garden</span>
-                                <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-veggie_garden_regular">170</span></span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-veggie_garden_medium">310</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1 hover:bg-[#0B3C20]/5 px-1 rounded transition">
-                                <span class="font-medium text-sm md:text-base flex items-center gap-1">
-                                    Sweet Corn Treat <span class="text-[#FFB302]">★</span>
-                                </span>
-                                <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-sweet_corn_treat_regular">170</span></span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-sweet_corn_treat_medium">310</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1 hover:bg-[#0B3C20]/5 px-1 rounded transition">
-                                <span class="font-medium text-sm md:text-base">Farm Fresh</span>
-                                <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-farm_fresh_regular">200</span></span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-farm_fresh_medium">330</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1 hover:bg-[#0B3C20]/5 px-1 rounded transition">
-                                <span class="font-medium text-sm md:text-base flex items-center gap-1">
-                                    Paneer Bingo <span class="text-[#FFB302]">★</span>
-                                </span>
-                                <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-paneer_bingo_regular">200</span></span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-paneer_bingo_medium">330</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1 hover:bg-[#0B3C20]/5 px-1 rounded transition">
-                                <span class="font-medium text-sm md:text-base">Paneer Tikka</span>
-                                <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-paneer_tikka_pizza_regular">240</span></span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-paneer_tikka_pizza_medium">390</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1 hover:bg-[#0B3C20]/5 px-1 rounded transition">
-                                <span class="font-medium text-sm md:text-base flex items-center gap-1">
-                                    Punjabi Paneer Pizza <span class="text-[#FFB302]">★</span>
-                                </span>
-                                <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-punjabi_paneer_pizza_regular">240</span></span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-punjabi_paneer_pizza_medium">390</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center hover:bg-[#0B3C20]/5 px-1 rounded transition">
-                                <span class="font-bold text-sm md:text-base text-[#0B3C20]">GRILL 'S SPECIAL</span>
-                                <div class="flex gap-8 text-sm font-bold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-grills_special_pizza_regular">240</span></span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-grills_special_pizza_medium">390</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-lg text-[#FAF6F0] font-bold tracking-wider">THIN CRUST PIZZA</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-3 font-sans-alt">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1">
-                                <span class="font-medium text-sm">Mushroom Pizza</span>
-                                <span class="text-sm font-bold text-[#0B3C20]">₹<span id="price-mushroom_pizza">390</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1">
-                                <span class="font-medium text-sm">Peri Peri Paneer Pizza</span>
-                                <span class="text-sm font-bold text-[#0B3C20]">₹<span id="price-peri_peri_paneer_pizza">390</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium text-sm">Veggie Monster Pizza</span>
-                                <span class="text-sm font-bold text-[#0B3C20]">₹<span id="price-veggie_monster_pizza">390</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-lg text-[#FAF6F0] font-bold tracking-wider">CLASSIC SINGLES</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-3 font-sans-alt">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1">
-                                <span class="font-medium text-sm">Onion Pizza</span>
-                                <span class="text-sm font-bold text-[#0B3C20]">₹<span id="price-onion_pizza">80</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1">
-                                <span class="font-medium text-sm">Corn Pizza</span>
-                                <span class="text-sm font-bold text-[#0B3C20]">₹<span id="price-corn_pizza">80</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium text-sm flex items-center gap-1">
-                                    Paneer Pizza <span class="text-[#FFB302]">★</span>
-                                </span>
-                                <span class="text-sm font-bold text-[#0B3C20]">₹<span id="price-paneer_pizza">100</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2 flex justify-between items-center">
-                            <h2 class="font-cinzel text-lg text-[#FAF6F0] font-bold tracking-wider">ADD-ONS</h2>
-                            <div class="flex gap-8 font-sans-alt text-xs font-bold text-[#D4AF37] pr-2">
-                                <span class="w-8 text-center">R</span>
-                                <span class="w-8 text-center">M</span>
-                            </div>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-3 font-sans-alt">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1">
-                                <span class="font-medium text-sm">Any Topping</span>
-                                <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-any_topping_regular">20</span></span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-any_topping_medium">30</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1">
-                                <span class="font-medium text-sm">Extra Cheese</span>
-                                <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-extra_cheese_regular">30</span></span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-extra_cheese_medium">50</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium text-sm">Cheese Burst Base</span>
-                                <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-cheese_burst_base_regular">60</span></span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-cheese_burst_base_medium">90</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2 flex justify-between items-center">
-                            <h2 class="font-cinzel text-lg text-[#FAF6F0] font-bold tracking-wider">NON-VEG PIZZA</h2>
-                            <div class="flex gap-8 font-sans-alt text-xs font-bold text-[#D4AF37] pr-2">
-                                <span class="w-8 text-center">R</span>
-                                <span class="w-8 text-center">M</span>
-                            </div>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-3 font-sans-alt">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1">
-                                <span class="font-medium text-sm">Grilled Chicken Pizza</span>
-                                <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-grilled_chicken_pizza_regular">250</span></span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-grilled_chicken_pizza_medium">420</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium text-sm flex items-center gap-1">
-                                    Peri Peri Chicken Pizza <span class="text-[#FFB302]">★</span>
-                                </span>
-                                <div class="flex gap-8 text-sm font-semibold">
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-peri_peri_chicken_pizza_regular">280</span></span>
-                                    <span class="w-8 text-center text-[#0B3C20]">₹<span id="price-peri_peri_chicken_pizza_medium">450</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="page-2-items" class="space-y-6">
+                    <!-- Dynamic sheet items loaded here -->
                 </div>
                 <div class="h-10"></div>
             </div>
 
+            <!-- Page 3: Burgers, Noodles, Tacos & Garlic Bread -->
             <div id="page-3" class="page-card incoming bg-[#FAF6F0] p-6 md:p-8 flex flex-col h-full overflow-y-auto custom-scroll">
                 <div class="ornament-corner ornament-tl"></div>
                 <div class="ornament-corner ornament-tr"></div>
@@ -391,214 +219,13 @@ GRILL MASTERS
                     <span class="font-cinzel text-[#0B3C20] border-b-2 border-[#D4AF37] text-2xl font-bold tracking-[0.2em] uppercase">Burgers &amp; Sides</span>
                 </div>
 
-                <div class="space-y-6">
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2.5 flex justify-between items-center">
-                            <h2 class="font-cinzel text-base md:text-lg text-[#FAF6F0] font-bold tracking-wider">VEG BURGER</h2>
-                            <div class="flex gap-10 font-sans-alt text-[10px] md:text-xs font-bold text-[#D4AF37] pr-2">
-                                <span class="w-10 text-center">REG.</span>
-                                <span class="w-12 text-center">W. WHEAT</span>
-                            </div>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm">Junior</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-junior_burger_reg">60</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-junior_burger_wheat">70</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm flex items-center gap-1">Texas <span class="text-[#FFB302]">★</span></span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-texas_burger_reg">80</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-texas_burger_wheat">90</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm flex items-center gap-1">Creamy Burger <span class="text-[#FFB302]">★</span></span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-creamy_burger_reg">80</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-creamy_burger_wheat">90</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm">Chana Patty Burger</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-chana_patty_burger_reg">80</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-chana_patty_burger_wheat">90</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm">American Burger</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-american_burger_reg">90</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-american_burger_wheat">100</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm flex items-center gap-1">Paneer Crisp <span class="text-[#FFB302]">★</span></span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-paneer_crisp_burger_reg">100</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-paneer_crisp_burger_wheat">110</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm flex items-center gap-1">Giga Bite <span class="text-[#FFB302]">★</span></span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-giga_bite_burger_reg">110</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-giga_bite_burger_wheat">120</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm flex items-center gap-1">Texas Paneer <span class="text-[#FFB302]">★</span></span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-texas_paneer_burger_reg">110</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-texas_paneer_burger_wheat">120</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm">Paneer Makhani Burger</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-paneer_makhani_burger_reg">120</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-paneer_makhani_burger_wheat">130</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium text-sm">Paneer Veg Mountain</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-paneer_veg_mountain_burger_reg">150</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-paneer_veg_mountain_burger_wheat">160</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2.5 flex justify-between items-center">
-                            <h2 class="font-cinzel text-base md:text-lg text-[#FAF6F0] font-bold tracking-wider">NON-VEG BURGERS</h2>
-                            <div class="flex gap-10 font-sans-alt text-[10px] md:text-xs font-bold text-[#D4AF37] pr-2">
-                                <span class="w-10 text-center">REG.</span>
-                                <span class="w-12 text-center">W. WHEAT</span>
-                            </div>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm">Compact Burger</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-compact_burger_reg">80</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-compact_burger_wheat">90</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm">Bad Boy</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-bad_boy_burger_reg">100</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-bad_boy_burger_wheat">110</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm">Big Devil</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-big_devil_burger_reg">120</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-big_devil_burger_wheat">130</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm">Illeagle Burger</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-illeagle_burger_reg">130</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-illeagle_burger_wheat">140</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm flex items-center gap-1">Grilled Chicken Burger <span class="text-[#FFB302]">★</span></span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-grilled_chicken_burger_reg">150</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-grilled_chicken_burger_wheat">160</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium text-sm">Chicken Mountain Burger</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-chicken_mountain_burger_reg">170</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-chicken_mountain_burger_wheat">180</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">TACO</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Veggie Taco</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veggie_taco">110</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium">Paneer Taco</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-paneer_taco">130</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">GARLIC BREAD</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Garlic Breadsticks</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-garlic_breadsticks">80</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Cheese Garlic Bread <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cheese_garlic_bread">120</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium">Exotic Garlic Bread</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-exotic_garlic_bread">130</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">NOODLES</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Desi Chowmein <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-desi_chowmein">120</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Veg Noodles</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_noodles">120</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Hakka Noodles</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hakka_noodles">150</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Paneer Noodles <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-paneer_noodles">150</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Mirchi Noodles</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-mirchi_noodles">160</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-bold text-[#0B3C20] flex items-center gap-1">Dragon Special Noodles <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-dragon_special_noodles">170</span></span>
-                            </div>
-                        </div>
-                    </div>
+                <div id="page-3-items" class="space-y-6">
+                    <!-- Dynamic sheet items loaded here -->
                 </div>
                 <div class="h-10"></div>
             </div>
 
+            <!-- Page 4: Gourmet Starters & Wraps -->
             <div id="page-4" class="page-card incoming bg-[#FAF6F0] p-6 md:p-8 flex flex-col h-full overflow-y-auto custom-scroll">
                 <div class="ornament-corner ornament-tl"></div>
                 <div class="ornament-corner ornament-tr"></div>
@@ -607,227 +234,13 @@ GRILL MASTERS
                     <span class="font-cinzel text-[#0B3C20] border-b-2 border-[#D4AF37] text-2xl font-bold tracking-[0.2em] uppercase">Gourmet Starters &amp; Wraps</span>
                 </div>
 
-                <div class="space-y-6">
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2 flex justify-between items-center">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">VEG WRAPS</h2>
-                            <div class="flex gap-10 font-sans-alt text-[10px] font-bold text-[#D4AF37] pr-2">
-                                <span class="w-10 text-center">REG.</span>
-                                <span class="w-12 text-center">W. WHEAT</span>
-                            </div>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm">Veg Wrap</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-veg_wrap_reg">120</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-veg_wrap_wheat">130</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm">Chana Patty Wrap</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-chana_patty_wrap_reg">120</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-chana_patty_wrap_wheat">130</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm flex items-center gap-1">Mexican Tortilla <span class="text-[#FFB302]">★</span></span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-mexican_tortilla_wrap_reg">130</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-mexican_tortilla_wrap_wheat">140</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm flex items-center gap-1">Hara Bhara Kebab Wrap <span class="text-[#FFB302]">★</span></span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-hara_bhara_kebab_wrap_reg">140</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-hara_bhara_kebab_wrap_wheat">150</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm flex items-center gap-1">Crunchy Paneer Wrap <span class="text-[#FFB302]">★</span></span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-crunchy_paneer_wrap_reg">140</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-crunchy_paneer_wrap_wheat">150</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm">Grilled Paneer Wrap</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-grilled_paneer_wrap_reg">150</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-grilled_paneer_wrap_wheat">160</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm flex items-center gap-1">Peri Peri Paneer Wrap <span class="text-[#FFB302]">★</span></span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-peri_peri_paneer_wrap_reg">150</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-peri_peri_paneer_wrap_wheat">160</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium text-sm">Paneer Makhani Wrap</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-paneer_makhani_wrap_reg">150</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-paneer_makhani_wrap_wheat">160</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2 flex justify-between items-center">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">NON-VEG WRAPS</h2>
-                            <div class="flex gap-10 font-sans-alt text-[10px] font-bold text-[#D4AF37] pr-2">
-                                <span class="w-10 text-center">REG.</span>
-                                <span class="w-12 text-center">W. WHEAT</span>
-                            </div>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm">Grilled Chicken Wrap</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-grilled_chicken_wrap_reg">140</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-grilled_chicken_wrap_wheat">150</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm">Chicken Makhani wrap</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-chicken_makhani_wrap_reg">150</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-chicken_makhani_wrap_wheat">160</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium text-sm flex items-center gap-1">Chicken Tikka Wrap <span class="text-[#FFB302]">★</span></span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-chicken_tikka_wrap_reg">160</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-chicken_tikka_wrap_wheat">170</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">BRUSCHETTA</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Cheese Bruschetta</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cheese_bruschetta">120</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium">Corn &amp; Mushroom Bruschetta</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-corn_mushroom_bruschetta">130</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">NACHOS</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Makhani Nachos</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-makhani_nachos">120</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Baked Makhani Nachos</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-baked_makhani_nachos">150</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Mexican Nachos <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-mexican_nachos">120</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium">Baked Mexican Nachos</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-baked_mexican_nachos">150</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">SPRING ROLLS</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Veg Spring Rolls <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_spring_rolls">130</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium flex items-center gap-1">Veg Kurkure Spring Rolls <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_kurkure_spring_rolls">150</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">SOUPS</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Veg Manchow Soup <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_manchow_soup">80</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Sweet &amp; Sour Soup</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-sweet_sour_soup">80</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Mushroom &amp; Corn Soup</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-mushroom_corn_soup">80</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium">Hot &amp; Sour Soup</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hot_sour_soup">80</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">SUBS</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Veg Sub</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_sub">140</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Crunchy Paneer Sub <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-crunchy_paneer_sub">160</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium">Grilled Paneer Sub</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-grilled_paneer_sub">160</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">NON VEG. SUBS</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Grilled Chicken Sub</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-grilled_chicken_sub">160</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium">Makhani Chicken Sub</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-makhani_chicken_sub">170</span></span>
-                            </div>
-                        </div>
-                    </div>
+                <div id="page-4-items" class="space-y-6">
+                    <!-- Dynamic sheet items loaded here -->
                 </div>
                 <div class="h-10"></div>
             </div>
 
+            <!-- Page 5: Pasta, Sandwiches & Sides -->
             <div id="page-5" class="page-card incoming bg-[#FAF6F0] p-6 md:p-8 flex flex-col h-full overflow-y-auto custom-scroll">
                 <div class="ornament-corner ornament-tl"></div>
                 <div class="ornament-corner ornament-tr"></div>
@@ -836,202 +249,13 @@ GRILL MASTERS
                     <span class="font-cinzel text-[#0B3C20] border-b-2 border-[#D4AF37] text-2xl font-bold tracking-[0.2em] uppercase">Pasta, Sandwiches &amp; Sides</span>
                 </div>
 
-                <div class="space-y-6">
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">VEG GRILLED SANDWICHES</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Veg &amp; Cheese Sandwich</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_cheese_sandwich">100</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Cheesy corn <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cheesy_corn_sandwich">120</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Mexican Wave</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-mexican_wave_sandwich">130</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Mushroom Corn <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-mushroom_corn_sandwich">150</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium">Paneer Tikka Sandwich</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-paneer_tikka_sandwich">160</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">NON-VEG GRILLED SANDWICHES</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Grilled Chicken Sandwich</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-grilled_chicken_sandwich">150</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium flex items-center gap-1">Makhani Chicken Sandwich <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-makhani_chicken_sandwich">170</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
-                            <div class="flex flex-col">
-                                <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">PASTA-LA-VISTA</h2>
-                                <span class="font-sans-alt text-[10px] text-[#FFB302] bg-[#202124] px-2 py-0.5 rounded mt-0.5 tracking-wider font-semibold">
-                                    Served with Garlic Bread
-                                </span>
-                            </div>
-                            <div class="flex gap-10 font-sans-alt text-[10px] font-bold text-[#D4AF37] self-end pr-2">
-                                <span class="w-10 text-center">REG.</span>
-                                <span class="w-12 text-center">BAKED</span>
-                            </div>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm flex items-center gap-1">White Sauce Pasta <span class="text-[#FFB302]">★</span></span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-white_sauce_pasta_reg">160</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-white_sauce_pasta_baked">190</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm flex items-center gap-1">Red Sauce Pasta <span class="text-[#FFB302]">★</span></span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-red_sauce_pasta_reg">160</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-red_sauce_pasta_baked">190</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm">Mix Sauce Pasta</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-mix_sauce_pasta_reg">170</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-mix_sauce_pasta_baked">200</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium text-sm">Tandoori Pasta</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-tandoori_pasta_reg">170</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-tandoori_pasta_baked">200</span></span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium text-sm">Makhani Pasta</span>
-                                <div class="flex gap-10 text-sm font-semibold">
-                                    <span class="w-10 text-center text-[#0B3C20]">₹<span id="price-makhani_pasta_reg">170</span></span>
-                                    <span class="w-12 text-center text-[#0B3C20]">₹<span id="price-makhani_pasta_baked">200</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">SIDES</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Classic Fries</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-classic_fries">80</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Peri Peri Fries <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-peri_peri_fries">100</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Bombay Fries <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-bombay_fries">110</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Hara Bhara Kebab</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hara_bhara_kebab">120</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Cheese Loaded Fries</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cheese_loaded_fries">130</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Peri Peri Cheese Loaded Fries</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-peri_peri_cheese_loaded_fries">140</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Bombay Cheese Loaded Fries</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-bombay_cheese_loaded_fries">140</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium">Chicken Nuggets</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-chicken_nuggets">150</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">FRIED RICE</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Veg Fried Rice <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_fried_rice">130</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Paneer Fried Rice</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-paneer_fried_rice">150</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Paneer Chilly Garlic Fried Rice <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-paneer_chilly_garlic_fried_rice">160</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium">Dragon Special Fried Rice</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-dragon_special_fried_rice">170</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">SALADS</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Veg Crunch Salad <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_crunch_salad">130</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Veg Gym Diet</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-veg_gym_diet_salad">150</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Grilled Paneer Salad</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-grilled_paneer_salad">150</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Paneer Crunch Salad <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-paneer_crunch_salad">160</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Chicken Gym Diet <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-chicken_gym_diet_salad">160</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium flex items-center gap-1">Grilled Chicken Salad <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-grilled_chicken_salad">170</span></span>
-                            </div>
-                        </div>
-                    </div>
+                <div id="page-5-items" class="space-y-6">
+                    <!-- Dynamic sheet items loaded here -->
                 </div>
                 <div class="h-10"></div>
             </div>
 
+            <!-- Page 6: Starters, Drinks & Shakes -->
             <div id="page-6" class="page-card incoming bg-[#FAF6F0] p-6 md:p-8 flex flex-col h-full overflow-y-auto custom-scroll">
                 <div class="ornament-corner ornament-tl"></div>
                 <div class="ornament-corner ornament-tr"></div>
@@ -1040,226 +264,8 @@ GRILL MASTERS
                     <span class="font-cinzel text-[#0B3C20] border-b-2 border-[#D4AF37] text-2xl font-bold tracking-[0.2em] uppercase">Starters, Drinks &amp; Shakes</span>
                 </div>
 
-                <div class="space-y-6">
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">STARTERS</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Chilly Potato</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-chilly_potato">130</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Honey Chilly Potato</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-honey_chilly_potato">150</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Crispy Corn</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-crispy_corn">150</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Manchurian (Dry/Gravy)</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-manchurian_dry">150</span> / ₹<span id="price-manchurian_gravy">170</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Mushroom Chilly Latpata</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-mushroom_chilly_latpata">170</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Cheese Chilly (Dry/Gravy)</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cheese_chilly_dry">170</span> / ₹<span id="price-cheese_chilly_gravy">190</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium">Paneer Hong Kong</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-paneer_hong_kong">200</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">DESSERTS</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Oreo Crunch Ice Cream <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-oreo_crunch_ice_cream">80</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Choco Lava Cake</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-choco_lava_cake">90</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Hot Brownie</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hot_brownie">100</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Hot Chocolate</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hot_chocolate">100</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium flex items-center gap-1">Hot Brownie with Ice Cream <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hot_brownie_with_ice_cream">150</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">HOT COFFEE</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Espresso Shot</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-espresso_shot">60</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Kali Coffee</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-kali_coffee">70</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Cappuccino <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cappuccino">100</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Café Latte <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cafe_latte">140</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Café Mocha</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cafe_mocha">150</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Hazelnut Latte</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hazelnut_latte">150</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium">Irish Latte</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-irish_latte">150</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">ICE TEA</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Lemon Ice Tea <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-lemon_ice_tea">80</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Blueberry Ice Tea <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-blueberry_ice_tea">100</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium">Watermelon Ice Tea</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-watermelon_ice_tea">100</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">MOJITOS</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Sweet Lime Mojito <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-sweet_lime_mojitio">90</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Virgin Mojito</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-virgin_mojito">90</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Blueberry Mojito</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-blueberry_mojito">90</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Watermelon Mojito <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-watermelon_mojito">90</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Green Apple Mojito</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-green_apple_mojito">90</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium flex items-center gap-1">Kala Khatta Mojito <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-kala_khatta_mojito">90</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">COLD COFFEE</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Cold Coffee <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-cold_coffee">110</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Iced Cappuccino <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-iced_cappuccino">110</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Caramel Coffee</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-caramel_coffee">120</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Iced Latte</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-iced_latte">140</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Irish Cold Coffee</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-irish_cold_coffee">140</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium">Hazelnut Cold Coffee</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-hazelnut_cold_coffee">140</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
-                        <div class="px-4 py-2">
-                            <h2 class="font-cinzel text-base text-[#FAF6F0] font-bold tracking-wider">SHAKES</h2>
-                        </div>
-                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-2.5 font-sans-alt text-sm">
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Vanilla Shake</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-vanilla_shake">100</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Strawberry Shake</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-strawberry_shake">100</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Butterscotch Shake <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-butterscotch_shake">110</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Chocolate Shake</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-chocolate_shake">110</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium">Black Currant Shake</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-black_currant_shake">110</span></span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-[#0B3C20]/5 pb-1">
-                                <span class="font-medium flex items-center gap-1">Oreo Shake <span class="text-[#FFB302]">★</span></span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-oreo_shake">140</span></span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="font-medium">Brownie Shake</span>
-                                <span class="font-bold text-[#0B3C20]">₹<span id="price-brownie_shake">140</span></span>
-                            </div>
-                        </div>
-                    </div>
+                <div id="page-6-items" class="space-y-6">
+                    <!-- Dynamic sheet items loaded here -->
                 </div>
                 <div class="h-10"></div>
             </div>
@@ -1372,41 +378,224 @@ GRILL MASTERS
         // Initialize Lucide Icons
         lucide.createIcons();
 
-        // ----------------- REAL-TIME GOOGLE SHEET FETCH SYSTEM -----------------
+        // ----------------- DYNAMIC REAL-TIME SHEET SYNC SYSTEM -----------------
         async function fetchMenuPrices() {
-            // Aapki public Google Sheet ka public CSV API path
-            const sheetUrl = "https://docs.google.com/spreadsheets/d/1ooAhddRANFXqv7S-JLif2CYLwusAYAwfp9CpxsfHlj4/gviz/tq?tqx=out:csv";
+            // Your live Google Sheet CSV representation API path
+            const sheetUrl = "https://docs.google.com/spreadsheets/d/1K1-yNxrWT3_GLRIlt486ozmNJbfnezXDdgVHy8P_KpY/gviz/tq?tqx=out:csv";
 
             try {
                 const response = await fetch(sheetUrl);
-                const data = await response.text();
+                const csvData = await response.text();
                 
-                // Pure CSV data ko alag-alag lines (rows) mein todna
-                const rows = data.split("\n");
+                // Parse CSV rows safely
+                const rows = parseCSV(csvData);
+                const categories = {};
+                
+                // Skip header line (index 0)
+                for (let i = 1; i < rows.length; i++) {
+                    const row = rows[i];
+                    if (row.length < 3 || !row[0]) continue; // Avoid processing empty lines
 
-                rows.forEach(row => {
-                    // Quotation marks ("") mita kar Column A aur Column B ko todna
-                    const cleanRow = row.replace(/"/g, "");
-                    const columns = cleanRow.split(",");
+                    const category = row[0].trim();
+                    const itemId = row[1].trim();
+                    const itemName = row[2].trim();
+                    const priceRegular = row[3] ? row[3].trim() : "";
+                    const priceMedium = row[4] ? row[4].trim() : "";
+                    const headerRegular = row[5] ? row[5].trim() : "";
+                    const headerMedium = row[6] ? row[6].trim() : "";
+                    const isPopular = row[7] ? row[7].trim().toUpperCase() === "TRUE" : false;
 
-                    if (columns.length >= 2) {
-                        const itemId = columns[0].trim();  // Column A: Item ID
-                        const price = columns[1].trim();   // Column B: Price
-
-                        // HTML mein bani huye ID span ko khoj kar price update karna
-                        const element = document.getElementById(`price-${itemId}`);
-                        if (element && price && !isNaN(price)) {
-                            element.innerText = price;
-                        }
+                    if (!categories[category]) {
+                        categories[category] = [];
                     }
-                });
-                console.log("Grill Masters Menu synced with Live Google Sheet successfully!");
+                    
+                    categories[category].push({
+                        itemId,
+                        itemName,
+                        priceRegular,
+                        priceMedium,
+                        headerRegular,
+                        headerMedium,
+                        isPopular
+                    });
+                }
+
+                // Call visual mapping layout builder
+                renderPages(categories);
+
+                console.log("Grill Masters Dynamic Royal Menu loaded successfully!");
             } catch (error) {
-                console.error("Error syncing prices from Google Sheet:", error);
+                console.error("Error building menu from live Sheet database:", error);
             }
         }
 
-        // ----------------- ASMR SOUND SYNTHESIZER (No assets required!) -----------------
+        // Standard CSV Parser (Processes quotes and commas inside names cleanly)
+        function parseCSV(text) {
+            let lines = [];
+            let row = [""];
+            let inQuotes = false;
+
+            for (let i = 0; i < text.length; i++) {
+                let c = text[i];
+                let next = text[i+1];
+                if (c === '"') {
+                    if (inQuotes && next === '"') {
+                        row[row.length - 1] += '"';
+                        i++;
+                    } else {
+                        inQuotes = !inQuotes;
+                    }
+                } else if (c === ',' && !inQuotes) {
+                    row.push('');
+                } else if ((c === '\r' || c === '\n') && !inQuotes) {
+                    if (c === '\r' && next === '\n') { i++; }
+                    lines.push(row);
+                    row = [''];
+                } else {
+                    row[row.length - 1] += c;
+                }
+            }
+            if (row.length > 1 || row[0] !== '') {
+                lines.push(row);
+            }
+            return lines;
+        }
+
+        // Maps categories safely to specific physical flipbook pages
+        function renderPages(categories) {
+            const categoryPageMap = {
+                // Page 2: Pizza Varieties
+                "VEG PIZZA": 2,
+                "THIN CRUST PIZZA": 2,
+                "CLASSIC SINGLES": 2,
+                "ADD-ONS": 2,
+                "NON-VEG PIZZA": 2,
+
+                // Page 3: Burgers, Noodles & Bread
+                "VEG BURGER": 3,
+                "NON-VEG BURGERS": 3,
+                "TACO": 3,
+                "GARLIC BREAD": 3,
+                "NOODLES": 3,
+
+                // Page 4: Wraps, Starters, Soups & Subs
+                "VEG WRAPS": 4,
+                "NON-VEG WRAPS": 4,
+                "BRUSCHETTA": 4,
+                "NACHOS": 4,
+                "SPRING ROLLS": 4,
+                "SOUPS": 4,
+                "SUBS": 4,
+                "NON VEG. SUBS": 4,
+
+                // Page 5: Sandwiches, Pasta, Fried Rice & Salads
+                "VEG GRILLED SANDWICHES": 5,
+                "NON-VEG GRILLED SANDWICHES": 5,
+                "PASTA-LA-VISTA": 5,
+                "SIDES": 5,
+                "FRIED RICE": 5,
+                "SALADS": 5,
+
+                // Page 6: Starters, Shakes & Coffee Drinks
+                "STARTERS": 6,
+                "DESSERTS": 6,
+                "HOT COFFEE": 6,
+                "ICE TEA": 6,
+                "MOJITOS": 6,
+                "COLD COFFEE": 6,
+                "SHAKES": 6
+            };
+
+            // Empty old lists to rebuild cleanly
+            for (let p = 2; p <= 6; p++) {
+                const container = document.getElementById(`page-${p}-items`);
+                if (container) container.innerHTML = "";
+            }
+
+            // Loop and group items to build cards
+            Object.keys(categories).forEach(catName => {
+                const targetPage = categoryPageMap[catName] || 6;
+                const pageContainer = document.getElementById(`page-${targetPage}-items`);
+                if (!pageContainer) return;
+
+                const items = categories[catName];
+                if (items.length === 0) return;
+
+                const firstItem = items[0];
+                let headersHtml = "";
+                
+                // Show size headers only if at least one item has a double pricing scheme
+                if (firstItem.priceMedium) {
+                    headersHtml = `
+                        <div class="flex gap-8 font-sans-alt text-[10px] md:text-xs font-bold text-[#D4AF37] pr-2">
+                            <span class="w-8 text-center uppercase">${firstItem.headerRegular || "R"}</span>
+                            <span class="w-10 text-center uppercase">${firstItem.headerMedium || "M"}</span>
+                        </div>
+                    `;
+                }
+
+                let subBadge = "";
+                if (catName === "PASTA-LA-VISTA") {
+                    subBadge = `
+                        <span class="font-sans-alt text-[10px] text-[#FFB302] bg-[#202124] px-2 py-0.5 rounded mt-0.5 tracking-wider font-semibold block w-fit">
+                            Served with Garlic Bread
+                        </span>
+                    `;
+                }
+
+                let catCardHtml = `
+                    <div class="bg-[#0B3C20] border-l-4 border-[#D4AF37] rounded-r-xl shadow-md overflow-hidden">
+                        <div class="px-4 py-2.5 flex justify-between items-center bg-[#0B3C20]">
+                            <div class="flex flex-col">
+                                <h2 class="font-cinzel text-base md:text-lg text-[#FAF6F0] font-bold tracking-wider">${catName}</h2>
+                                ${subBadge}
+                            </div>
+                            ${headersHtml}
+                        </div>
+                        <div class="bg-[#FAF6F0] p-4 text-[#0A1D37] space-y-3 font-sans-alt">
+                `;
+
+                items.forEach(item => {
+                    let pricesMarkup = "";
+                    if (item.priceMedium) {
+                        pricesMarkup = `
+                            <div class="flex gap-8 text-sm font-semibold">
+                                <span class="w-8 text-center text-[#0B3C20]">₹<span>${item.priceRegular}</span></span>
+                                <span class="w-10 text-center text-[#0B3C20]">₹<span>${item.priceMedium}</span></span>
+                            </div>
+                        `;
+                    } else {
+                        pricesMarkup = `
+                            <span class="text-sm font-bold text-[#0B3C20]">₹<span>${item.priceRegular}</span></span>
+                        `;
+                    }
+
+                    // Popular/Best Seller item badge
+                    const starBadge = item.isPopular ? `<span class="text-[#FFB302] ml-1">★</span>` : "";
+
+                    catCardHtml += `
+                        <div class="flex justify-between items-center border-b border-[#0B3C20]/10 pb-1.5 hover:bg-[#0B3C20]/5 px-1 rounded transition">
+                            <span class="font-medium text-sm md:text-base flex items-center">
+                                ${item.itemName}${starBadge}
+                            </span>
+                            ${pricesMarkup}
+                        </div>
+                    `;
+                });
+
+                catCardHtml += `
+                        </div>
+                    </div>
+                `;
+
+                pageContainer.innerHTML += catCardHtml;
+            });
+
+            // Initialize Lucide icons inside loaded components
+            lucide.createIcons();
+        }
+
+        // ----------------- ASMR SOUND SYNTHESIZER -----------------
         function playASMRFlipSound() {
             if (!isAudioOn) return;
             try {
@@ -1414,8 +603,7 @@ GRILL MASTERS
                 if (!AudioContext) return;
                 const ctx = new AudioContext();
 
-                // 1. Generate White Noise Buffer for "Paper Rustle"
-                const bufferSize = ctx.sampleRate * 0.35; // 0.35 seconds length
+                const bufferSize = ctx.sampleRate * 0.35;
                 const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
                 const data = buffer.getChannelData(0);
                 for (let i = 0; i < bufferSize; i++) {
@@ -1425,25 +613,21 @@ GRILL MASTERS
                 const noiseNode = ctx.createBufferSource();
                 noiseNode.buffer = buffer;
 
-                // 2. Highpass Filter to remove muddy low frequencies, giving crisp paper rustle
                 const hpFilter = ctx.createBiquadFilter();
                 hpFilter.type = 'highpass';
                 hpFilter.frequency.setValueAtTime(2000, ctx.currentTime);
                 hpFilter.frequency.exponentialRampToValueAtTime(4500, ctx.currentTime + 0.2);
 
-                // 3. Bandpass Filter to shape the frequency response
                 const bpFilter = ctx.createBiquadFilter();
                 bpFilter.type = 'bandpass';
                 bpFilter.frequency.setValueAtTime(3000, ctx.currentTime);
                 bpFilter.Q.setValueAtTime(1.5, ctx.currentTime);
 
-                // 4. Volume/Gain envelope
                 const gainNode = ctx.createGain();
                 gainNode.gain.setValueAtTime(0.001, ctx.currentTime);
-                gainNode.gain.linearRampToValueAtTime(0.18, ctx.currentTime + 0.05); // quick swish fade-in
-                gainNode.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.33); // soft smooth decay
+                gainNode.gain.linearRampToValueAtTime(0.18, ctx.currentTime + 0.05);
+                gainNode.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.33);
 
-                // Connections
                 noiseNode.connect(hpFilter);
                 hpFilter.connect(bpFilter);
                 bpFilter.connect(gainNode);
@@ -1451,7 +635,7 @@ GRILL MASTERS
 
                 noiseNode.start();
             } catch (error) {
-                console.log("Audio synthesis bypassed due to user gesture restriction or browser block.");
+                console.log("Audio synthesis bypassed due to user gesture restriction.");
             }
         }
 
@@ -1478,7 +662,6 @@ GRILL MASTERS
                 const pageElement = document.getElementById(`page-${i}`);
                 if (!pageElement) continue;
 
-                // Clear classes
                 pageElement.classList.remove('active', 'flipped', 'incoming');
 
                 if (i < currentPage) {
@@ -1551,7 +734,7 @@ GRILL MASTERS
             const diffY = touchendY - touchstartY;
 
             if (Math.abs(diffX) > Math.abs(diffY)) {
-                if (Math.abs(diffX) > 45) { // minimum distance
+                if (Math.abs(diffX) > 45) {
                     if (diffX < 0) {
                         nextPage();
                     } else {
@@ -1595,7 +778,7 @@ GRILL MASTERS
             const ratingStars = "★".repeat(selectedRating) + "☆".repeat(5 - selectedRating);
 
             const emailSubject = `Imperial Feedback for Grill Masters from ${name}`;
-            const emailBody = `My Lord / Admin,\n\nI have presented my culinary testimony for Grill Masters:\n\n` + 
+            const emailBody = `My Lord / Admin,\n\nI have presented my testimony for Grill Masters:\n\n` + 
                               `Guest Name: ${name}\n` +
                               `Contact Info: ${contact}\n` +
                               `Imperial Rating: ${ratingStars} (${selectedRating}/5 Stars)\n\n` +
@@ -1622,11 +805,11 @@ GRILL MASTERS
             setRating(5);
         }
 
-        // Initial setup and Live Google Sheet fetch trigger on window load
+        // Trigger dynamic loader on load
         window.onload = () => {
             updatePageDisplay();
-            fetchMenuPrices(); // Sheet connect sync code run
+            fetchMenuPrices();
         };
     </script>
 </body>
-                            </html>
+</html>
